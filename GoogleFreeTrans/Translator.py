@@ -76,9 +76,9 @@ class translator():
                         'auto': 'auto'}
 
     def __init__(self, src='en', dest='fr', updata_time=600):
-        if src not in self.support_lauguage and src not in self.support_lauguage.values():
+        if src not in self.support_lauguage and src not in list(self.support_lauguage.values()):
             raise ValueError('source language not support')
-        if dest not in self.support_lauguage and dest not in self.support_lauguage.values():
+        if dest not in self.support_lauguage and dest not in list(self.support_lauguage.values()):
             raise ValueError('destination language not support')
         self.url = 'https://translate.google.cn/translate_a/single'
         self.params = {

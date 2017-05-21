@@ -7,7 +7,7 @@ def get_res(url):
         #res.encoding = 'utf-8'
         return res
     except Exception as ex:
-        print('[-]ERROR: ' + str(ex))
+        print(('[-]ERROR: ' + str(ex)))
         return res
 
 def find_tkk_fn(res):

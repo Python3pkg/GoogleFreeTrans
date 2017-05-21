@@ -25,7 +25,7 @@ def test_unicode():
 
 
 def test_special_chars():
-    text = u"©×《》"
+    text = "©×《》"
     translator = Translator.translator(src='en', dest='en')
     rep = translator.translate(text)
     assert rep == text

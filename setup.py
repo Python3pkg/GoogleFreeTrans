@@ -74,7 +74,7 @@ if __name__ == "__main__":
             'coverage'
             ]
         try:
-            modules = map(__import__, test_requirements)
+            modules = list(map(__import__, test_requirements))
         except ImportError as e:
             err_msg = e.message.replace("No module named ", "")
             msg = "%s is not installed. Install your test requirments." % err_msg
